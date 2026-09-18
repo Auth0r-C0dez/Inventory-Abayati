@@ -17,6 +17,7 @@ app.get("/",(req,res) => {
 });
 
 app.use("/hamza/customers",require("./routes/customerRoute"));
+app.use('/hamza/products',require('./routes/productRoutez'));
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
